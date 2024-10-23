@@ -9,6 +9,47 @@
 { "hdr": "DA60", "cmd": {"22": "7028"}, "freq": 5,
   "signals": [
     {"id": "TLX_AAT", "path": "Climate", "fmt": {"bix": 128, "len": 16, "max": 200, "min": -200, "unit": "celsius" }, "name": "Ambient Air Temperature"}
+  ]},
+{ "hdr": "DA26", "cmd": {"22": "6002"}, "freq": 5,
+  "signals": [
+    {"id": "TLX_TRANS_TEMP", "path": "Transmission", "fmt": {"len": 16, "max": 651.3, "min": -40, "div": 10, "add": -40, "unit": "celsius" }, "name": "Transmission Fluid Temperature"}
+  ]},
+{ "hdr": "DA10", "cmd": {"22": "1940"}, "freq": 5,
+  "signals": [
+    {"id": "TLX_OIL_TEMP", "path": "Engine.Generic", "fmt": {"len": 16, "max": 651.3, "min": -40, "div": 10, "add": -40, "unit": "celsius" }, "name": "Engine Oil Temperature"}
+  ]},
+{ "hdr": "DA10", "cmd": {"22": "2120"}, "freq": 5,
+  "signals": [
+    {"id": "TLX_FUEL_LEVEL", "path": "Fuel.Generic", "fmt": {"len": 8, "max": 100, "unit": "percent" }, "name": "Fuel Level", "suggestedMetric": "fuelTankLevel"}
+  ]},
+{ "hdr": "DA10", "cmd": {"22": "F190"}, "freq": 1,
+  "signals": [
+    {"id": "TLX_BAT_VOLT", "path": "Battery.Generic", "fmt": {"len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "Battery Voltage"}
+  ]},
+{ "hdr": "DA58", "cmd": {"22": "6000"}, "freq": 5,
+  "signals": [
+    {"id": "TLX_STEER_ANGLE", "path": "Steering", "fmt": {"len": 16, "max": 3276.7, "min": -3276.8, "div": 10, "unit": "degrees" }, "name": "Steering Wheel Angle"}
+  ]},
+{ "hdr": "DA10", "cmd": {"22": "17C0"}, "freq": 5,
+  "signals": [
+    {"id": "TLX_ACC_PEDAL_POS", "path": "Control.Pedals.Generic", "fmt": {"len": 16, "max": 100, "div": 100, "unit": "percent" }, "name": "Accelerator Pedal Position"}
+  ]},
+{ "hdr": "DA28", "cmd": {"22": "3000"}, "freq": 5,
+  "signals": [
+    {"id": "TLX_BRAKE_PEDAL", "path": "Control.Pedals.Generic", "fmt": {"len": 8, "max": 1, "unit": "boolean" }, "name": "Brake Pedal Status"}
+  ]},
+{ "hdr": "DA20", "cmd": {"22": "7001"}, "freq": 15,
+  "signals": [
+    {"id": "TLX_SEATBELT_DRIVER", "path": "Safety", "fmt": {"len": 8, "max": 1, "unit": "boolean" }, "name": "Driver Seat Belt Status"},
+    {"id": "TLX_SEATBELT_PASSENGER", "path": "Safety", "fmt": {"bix": 8, "len": 8, "max": 1, "unit": "boolean" }, "name": "Passenger Seat Belt Status"}
+  ]},
+{ "hdr": "DA10", "cmd": {"22": "1600"}, "freq": 0.25,
+  "signals": [
+    {"id": "TLX_RPM_HIGH_RES", "path": "Engine.Generic", "fmt": {"len": 16, "max": 16383.75, "div": 4, "unit": "rpm" }, "name": "Engine RPM High Resolution"}
+  ]},
+{ "hdr": "DA18", "cmd": {"22": "18F0"}, "freq": 0.25,
+  "signals": [
+    {"id": "TLX_VEHICLE_SPEED", "path": "Movement.Generic", "fmt": {"len": 16, "max": 655.35, "div": 100, "unit": "kilometersPerHour" }, "name": "Vehicle Speed High Resolution", "suggestedMetric": "speed"}
   ]}
 ]
 }

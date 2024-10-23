@@ -10,6 +10,10 @@
   "signals": [
     {"id": "TLX_AAT", "path": "Climate", "fmt": {"bix": 128, "len": 16, "max": 200, "min": -200, "unit": "celsius" }, "name": "Ambient Air Temperature"}
   ]},
+{ "hdr": "DA10", "cmd": {"22": "21DA"}, "freq": 5,
+  "signals": [
+    {"id": "TLX_FUEL_RANGE", "path": "Trips.Generic", "fmt": {"len": 16, "max": 6553.5, "div": 10, "unit": "kilometers" }, "name": "Remaining Fuel Range", "suggestedMetric": "fuelRange"}
+  ]},
 { "hdr": "DA26", "cmd": {"22": "6002"}, "freq": 5,
   "signals": [
     {"id": "TLX_TRANS_TEMP", "path": "Transmission", "fmt": {"len": 16, "max": 651.3, "min": -40, "div": 10, "add": -40, "unit": "celsius" }, "name": "Transmission Fluid Temperature"}

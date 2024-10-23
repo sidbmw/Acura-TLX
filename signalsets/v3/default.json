@@ -6,29 +6,33 @@
     {"id": "TLX_TP_RR", "path": "Tires", "fmt": {"bix": 96,  "len": 16, "max": 65535, "unit": "kilopascal" }, "name": "Rear right tire pressure",  "suggestedMetric": "rearRightTirePressure"},
     {"id": "TLX_TP_RL", "path": "Tires", "fmt": {"bix": 112, "len": 16, "max": 65535, "unit": "kilopascal" }, "name": "Rear left tire pressure",   "suggestedMetric": "rearLeftTirePressure"}
   ]},
-{ "hdr": "DA60", "cmd": {"22": "7028"}, "freq": 5,
-  "signals": [
-    {"id": "TLX_AAT", "path": "Climate", "fmt": {"bix": 128, "len": 16, "max": 200, "min": -200, "unit": "celsius" }, "name": "Ambient Air Temperature"}
-  ]},
-{ "hdr": "DA10", "cmd": {"22": "21DA"}, "freq": 5,
-  "signals": [
-    {"id": "TLX_FUEL_RANGE", "path": "Trips.Generic", "fmt": {"len": 16, "max": 6553.5, "div": 10, "unit": "kilometers" }, "name": "Remaining Fuel Range", "suggestedMetric": "fuelRange"}
-  ]},
 { "hdr": "DA26", "cmd": {"22": "6002"}, "freq": 5,
   "signals": [
-    {"id": "TLX_TRANS_TEMP", "path": "Transmission", "fmt": {"len": 16, "max": 651.3, "min": -40, "div": 10, "add": -40, "unit": "celsius" }, "name": "Transmission Fluid Temperature"}
+    {"id": "TLX_TRANS_TEMP", "path": "Transmission", "fmt": {"bix": 88, "len": 16, "signed": true, "div": 10, "unit": "celsius" }, "name": "Transmission Fluid Temperature"}
   ]},
-{ "hdr": "DA10", "cmd": {"22": "1940"}, "freq": 5,
+{ "hdr": "DA60", "cmd": {"22": "7028"}, "freq": 5,
   "signals": [
-    {"id": "TLX_OIL_TEMP", "path": "Engine.Generic", "fmt": {"len": 16, "max": 651.3, "min": -40, "div": 10, "add": -40, "unit": "celsius" }, "name": "Engine Oil Temperature"}
+    {"id": "TLX_AAT", "path": "Climate", "fmt": {"bix": 128, "len": 16, "signed": true, "div": 10, "unit": "celsius" }, "name": "Ambient Air Temperature"}
   ]},
-{ "hdr": "DA10", "cmd": {"22": "2120"}, "freq": 5,
+{ "hdr": "None", "cmd": {"01": "0C"}, "freq": 5,
   "signals": [
-    {"id": "TLX_FUEL_LEVEL", "path": "Fuel.Generic", "fmt": {"len": 8, "max": 100, "unit": "percent" }, "name": "Fuel Level", "suggestedMetric": "fuelTankLevel"}
+    {"id": "EngineRPM", "path": "Engine.Generic", "fmt": {"len": 16, "max": 16383.75, "div": 4, "unit": "rpm" }, "name": "Engine RPM", "suggestedMetric": "engineSpeed"}
   ]},
-{ "hdr": "DA10", "cmd": {"22": "F190"}, "freq": 1,
+{ "hdr": "None", "cmd": {"01": "0D"}, "freq": 5,
   "signals": [
-    {"id": "TLX_BAT_VOLT", "path": "Battery.Generic", "fmt": {"len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "Battery Voltage"}
+    {"id": "VehicleSpeed", "path": "Movement.Generic", "fmt": {"len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Vehicle Speed", "suggestedMetric": "speed"}
+  ]},
+{ "hdr": "None", "cmd": {"01": "05"}, "freq": 5,
+  "signals": [
+    {"id": "CoolantTemperature", "path": "Engine.Generic", "fmt": {"len": 8, "max": 215, "add": -40, "unit": "celsius" }, "name": "Engine Coolant Temperature"}
+  ]},
+{ "hdr": "None", "cmd": {"01": "2F"}, "freq": 5,
+  "signals": [
+    {"id": "FuelLevel", "path": "Fuel.Generic", "fmt": {"len": 8, "max": 100, "unit": "percent" }, "name": "Fuel Level", "suggestedMetric": "fuelTankLevel"}
+  ]},
+{ "hdr": "None", "cmd": {"01": "42"}, "freq": 1,
+  "signals": [
+    {"id": "BatteryVoltage", "path": "Battery.Generic", "fmt": {"len": 16, "max": 65535, "div": 1000, "unit": "volts" }, "name": "Battery Voltage"}
   ]},
 { "hdr": "DA58", "cmd": {"22": "6000"}, "freq": 5,
   "signals": [

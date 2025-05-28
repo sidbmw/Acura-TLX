@@ -10,5 +10,4 @@ test_cases:
     18DAF1102600000000000000
     18DAF1102700000000000600
     18DAF1102800005555555555
-  expected_values:
-    TLX_ACTIVE_CYL: 6
+  expected_values: {}

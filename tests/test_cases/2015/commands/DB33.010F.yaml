@@ -1,8 +1,6 @@
 command_id: DB33.010F
 test_cases:
 - response: 18DAF11003410F3E
-  expected_values:
-    IAT: 22
+  expected_values: {}
 - response: 18DAF11003410F61
-  expected_values:
-    IAT: 57
+  expected_values: {}

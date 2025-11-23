@@ -26,7 +26,7 @@
     {"id": "TLX_KNOCK_CTRL", "path": "ECU",    "fmt": {"bix": 80,  "len": 8, "max": 2,   "mul": 2,   "div": 255, "unit": "scalar"  }, "name": "Knock control"},
     {"id": "TLX_VTC_DUTY",   "path": "Engine", "fmt": {"bix": 224, "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "Variable valve timing duty"}
   ]},
-{ "hdr": "DA10", "rax": "10", "cmd": {"22": "2663"}, "freq": 1, "dbgfilter": { "from": 2015 },
+{ "hdr": "DA10", "rax": "10", "cmd": {"22": "2663"}, "freq": 1, "dbgfilter": { "years": [2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024], "from": 2026 },
   "signals": [
     {"id": "TLX_MISFIRE_1", "path": "ECU", "fmt": {"bix": 272, "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfire count, cylinder 1"},
     {"id": "TLX_MISFIRE_2", "path": "ECU", "fmt": {"bix": 288, "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfire count, cylinder 2"},

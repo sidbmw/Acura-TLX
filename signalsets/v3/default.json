@@ -43,7 +43,7 @@
   ]},
 { "hdr": "DA1E", "rax": "1E", "cmd": {"22": "3083"}, "freq": 5, "dbgfilter": { "years": [2016, 2017, 2018, 2019], "from": 2021 },
   "signals": [
-    {"id": "TLX_ATF", "path": "Transmission", "fmt": {"bix": 112, "len": 8, "max": 200, "min": -40, "add": -40, "unit": "celsius" }, "name": "ATF temperature"}
+    {"id": "TLX_ATF_T", "path": "Transmission", "fmt": {"bix": 112, "len": 8, "max": 200, "min": -40, "add": -40, "unit": "celsius" }, "name": "Transmission fluid temperature"}
   ]},
 { "hdr": "DA1E", "rax": "1E", "cmd": {"22": "3086"}, "freq": 0.5, "filter": { "to": 2020 }, "dbgfilter": { "years": [2016, 2017, 2018, 2019] },
   "signals": [

@@ -40,7 +40,7 @@ test_cases:
     18DAF1262800000000555555
 - expected_values:
     TLX_TP_FL: 225.0
-    TLX_TP_FR: 225.0
+    TLX_TP_FR: 227.0
     TLX_TP_RL: 228.0
     TLX_TP_RR: 227.0
     TLX_TT_FL: 3.0

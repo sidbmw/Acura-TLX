@@ -3,6 +3,7 @@ test_cases:
 - expected_values:
     TLX_KNOCK_CTRL: 0.11765
     TLX_VTC_DUTY: 0
+    TLX_KNOCK_RETARD: 0
   response: |-
     18DAF11010396226622CF030
     18DAF1102100FFFC00000000
@@ -16,6 +17,7 @@ test_cases:
 - expected_values:
     TLX_KNOCK_CTRL: 0.11765
     TLX_VTC_DUTY: 0
+    TLX_KNOCK_RETARD: 0
   response: |-
     18DAF11010396226622CF030
     18DAF1102100FFFC00000000
@@ -29,6 +31,7 @@ test_cases:
 - expected_values:
     TLX_KNOCK_CTRL: 0.11765
     TLX_VTC_DUTY: 0
+    TLX_KNOCK_RETARD: 0
   response: |-
     18DAF11010396226622CF030
     18DAF1102100FFFC00000000
@@ -42,6 +45,7 @@ test_cases:
 - expected_values:
     TLX_KNOCK_CTRL: 0.11765
     TLX_VTC_DUTY: 0
+    TLX_KNOCK_RETARD: 0
   response: |-
     18DAF11010396226622CF030
     18DAF1102100FFFC00000000
@@ -55,6 +59,7 @@ test_cases:
 - expected_values:
     TLX_KNOCK_CTRL: 0.12549
     TLX_VTC_DUTY: 0
+    TLX_KNOCK_RETARD: 0
   response: |-
     18DAF11010396226622CF030
     18DAF1102100FFFC00000000
@@ -68,6 +73,7 @@ test_cases:
 - expected_values:
     TLX_KNOCK_CTRL: 0.14902
     TLX_VTC_DUTY: 0
+    TLX_KNOCK_RETARD: 0
   response: |-
     18DAF11010396226622CF030
     18DAF1102100FFFC00000000
@@ -81,6 +87,7 @@ test_cases:
 - expected_values:
     TLX_KNOCK_CTRL: 0.17255
     TLX_VTC_DUTY: 0
+    TLX_KNOCK_RETARD: 0
   response: |-
     18DAF11010396226622CF030
     18DAF1102100FFFC00000000
@@ -94,6 +101,7 @@ test_cases:
 - expected_values:
     TLX_KNOCK_CTRL: 0.18039
     TLX_VTC_DUTY: 0
+    TLX_KNOCK_RETARD: 0
   response: |-
     18DAF11010396226622CF030
     18DAF1102100FFFC00000000
@@ -107,6 +115,7 @@ test_cases:
 - expected_values:
     TLX_KNOCK_CTRL: 0.18039
     TLX_VTC_DUTY: 0
+    TLX_KNOCK_RETARD: 0
   response: |-
     18DAF11010396226622CF030
     18DAF1102100FFFC00000000
@@ -120,6 +129,7 @@ test_cases:
 - expected_values:
     TLX_KNOCK_CTRL: 0.18039
     TLX_VTC_DUTY: 0
+    TLX_KNOCK_RETARD: 0
   response: |-
     18DAF11010396226622CF030
     18DAF1102100FFFC00000000
@@ -133,6 +143,7 @@ test_cases:
 - expected_values:
     TLX_KNOCK_CTRL: 0.18039
     TLX_VTC_DUTY: 0
+    TLX_KNOCK_RETARD: 0
   response: |-
     18DAF11010396226622CF030
     18DAF1102100FFFC00000000
@@ -146,6 +157,7 @@ test_cases:
 - expected_values:
     TLX_KNOCK_CTRL: 0.18039
     TLX_VTC_DUTY: 0
+    TLX_KNOCK_RETARD: 0
   response: |-
     18DAF11010396226622CF030
     18DAF1102100FFFC00000000
@@ -159,6 +171,7 @@ test_cases:
 - expected_values:
     TLX_KNOCK_CTRL: 0.21961
     TLX_VTC_DUTY: 0
+    TLX_KNOCK_RETARD: 0
   response: |-
     18DAF11010396226622CF030
     18DAF1102100FFFC00000000
@@ -172,6 +185,7 @@ test_cases:
 - expected_values:
     TLX_KNOCK_CTRL: 0.21961
     TLX_VTC_DUTY: 0
+    TLX_KNOCK_RETARD: 0
   response: |-
     18DAF11010396226622CF030
     18DAF1102100FFFC00000000
@@ -185,6 +199,7 @@ test_cases:
 - expected_values:
     TLX_KNOCK_CTRL: 0.21961
     TLX_VTC_DUTY: 0
+    TLX_KNOCK_RETARD: 0
   response: |-
     18DAF11010396226622CF030
     18DAF1102100FFFC00000000
@@ -198,6 +213,7 @@ test_cases:
 - expected_values:
     TLX_KNOCK_CTRL: 0.23529
     TLX_VTC_DUTY: 0
+    TLX_KNOCK_RETARD: 0
   response: |-
     18DAF11010396226622CF030
     18DAF1102100FFFC00000000
@@ -211,6 +227,7 @@ test_cases:
 - expected_values:
     TLX_KNOCK_CTRL: 0.32157
     TLX_VTC_DUTY: 0
+    TLX_KNOCK_RETARD: 0
   response: |-
     18DAF11010396226622CF030
     18DAF1102100FFFC00000000
@@ -224,6 +241,7 @@ test_cases:
 - expected_values:
     TLX_KNOCK_CTRL: 0.39216
     TLX_VTC_DUTY: 0
+    TLX_KNOCK_RETARD: 0
   response: |-
     18DAF11010396226622CF030
     18DAF1102100FFFC00000000
@@ -237,6 +255,7 @@ test_cases:
 - expected_values:
     TLX_KNOCK_CTRL: 0.43137
     TLX_VTC_DUTY: 0
+    TLX_KNOCK_RETARD: 0
   response: |-
     18DAF11010396226622CF030
     18DAF1102100FFFC00000000
@@ -250,6 +269,7 @@ test_cases:
 - expected_values:
     TLX_KNOCK_CTRL: 0.53333
     TLX_VTC_DUTY: 0
+    TLX_KNOCK_RETARD: 0
   response: |-
     18DAF11010396226622CF030
     18DAF1102100FFFC00000000
@@ -263,6 +283,7 @@ test_cases:
 - expected_values:
     TLX_KNOCK_CTRL: 0.1098
     TLX_VTC_DUTY: 0
+    TLX_KNOCK_RETARD: 5
   response: |-
     18DAF11010396226622CF030
     18DAF1102100FFFC00000500
@@ -276,6 +297,7 @@ test_cases:
 - expected_values:
     TLX_KNOCK_CTRL: 0.46275
     TLX_VTC_DUTY: 0
+    TLX_KNOCK_RETARD: 10
   response: |-
     18DAF11010396226622CF030
     18DAF1102100FFFC00000A00

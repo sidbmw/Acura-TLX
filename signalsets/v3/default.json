@@ -23,8 +23,9 @@
   ]},
 { "hdr": "DA10", "rax": "10", "cmd": {"22": "2662"}, "freq": 0.25, "dbgfilter": { "years": [2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024], "from": 2026 },
   "signals": [
-    {"id": "TLX_KNOCK_RETARD", "path": "ECU",    "fmt": {"bix": 64,  "len": 8, "max": 20,                          "unit": "degrees" }, "name": "Knock retard",               "description": "EXPERIMENTAL, unvalidated decode. Byte 8 of the PID 2662 response is a candidate for knock retard, not confirmed. Do not use for tuning decisions until validated against a paired KTuner log."},
+    {"id": "TLX_KNOCK_RETARD", "path": "ECU",    "fmt": {"bix": 64,  "len": 8, "max": 20,                          "unit": "degrees" }, "name": "Knock retard",                 "description": "EXPERIMENTAL, unvalidated decode. Byte 8 of the PID 2662 response is a candidate for knock retard, not confirmed. To validate: log standard Timing Advance (SAE PID 0x0E) during a pull; timing dips matching this signal's spikes confirm the scale. Do not use for tuning decisions until validated."},
     {"id": "TLX_KNOCK_CTRL",   "path": "ECU",    "fmt": {"bix": 80,  "len": 8, "max": 2,   "mul": 2,   "div": 255, "unit": "scalar"  }, "name": "Knock control"},
+    {"id": "TLX_KNOCK_B11",    "path": "ECU",    "fmt": {"bix": 88,  "len": 8, "max": 255,                         "unit": "scalar"  }, "name": "Knock byte 11 (experimental)", "description": "EXPERIMENTAL reference byte. In test captures it tracked knock control (r=0.72) and moves slowly. Log alongside TLX_KNOCK_RETARD during a pull: if byte 8 spikes fast while this stays flat, byte 8 behaves like retard (fast transient) rather than learned control (slow)."},
     {"id": "TLX_VTC_DUTY",     "path": "Engine", "fmt": {"bix": 224, "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "Variable valve timing duty"}
   ]},
 { "hdr": "DA10", "rax": "10", "cmd": {"22": "2663"}, "freq": 1, "dbgfilter": { "years": [2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024], "from": 2026 },

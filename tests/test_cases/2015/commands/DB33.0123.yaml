@@ -3,3 +3,21 @@ test_cases:
 - expected_values:
     FRP: 3440
   response: 18DAF1100441230158
+- expected_values:
+    FRP: 3470
+  response: 18DAF110044123015B
+- expected_values:
+    FRP: 3500
+  response: 18DAF110044123015E
+- expected_values:
+    FRP: 3560
+  response: 18DAF1100441230164
+- expected_values:
+    FRP: 3650
+  response: 18DAF110044123016D
+- expected_values:
+    FRP: 8950
+  response: 18DAF110044123037F
+- expected_values:
+    FRP: 8980
+  response: 18DAF1100441230382
